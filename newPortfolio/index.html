@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>[Your Name] - MCA Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #3b82f6;
+      --dark: #1f2937;
+      --light: #f9fafb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--dark);
+      z-index: 1000;
+      padding: 1rem 2rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: var(--dark);
+    }
+
+    #home {
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    #home h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    #about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .about-img {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .about-img img {
+      width: 250px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid var(--primary);
+    }
+
+    .about-text {
+      flex: 2 1 400px;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .skill {
+      background: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-weight: 600;
+    }
+
+    .resume-link {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .resume-link a {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .resume-link a:hover {
+      background: #2563eb;
+    }
+
+    .project-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .project-card h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 100%px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-top: 0.8rem;
+    }
+
+    #contact p, #contact a {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      #about {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Hi, I'm Vivek Kumar</h1>
+    <p>MCA Student | Web Developer | Tech Enthusiast</p>
+  </section>
+
+  <section id="about">
+    <div class="about-img">
+      <img src="img.png" alt="Profile Image" />
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>"I am a dedicated and results-driven MCA (Master of Computer Applications) student with a strong foundation in computer science, software development, and emerging technologies. My academic journey has equipped me with hands-on experience in programming, data structures, web and mobile application development, and database management. I am passionate about building innovative, scalable, and user-centric solutions, and I consistently strive to enhance my technical and analytical skills. With a keen interest in areas like full-stack development, cybersecurity, and cloud computing, I am committed to contributing effectively to forward-thinking projects and dynamic tech teams."</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Java</div>
+      <div class="skill">Python</div>
+      <div class="skill">MySQL</div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="resume-link">
+      <a href="Resume.pdf" download>Download Resume (PDF)</a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>GameVerse</h3>
+      <p><b>Project Title: GameVerse</b> – A Multi-Platform Gaming Ecosystem <br>
+      <b>Project Type:</b> Academic / Personal / Team Collaboration <br>
+      <b>Technologies Used:</b> Java,Java Swing (GUI Framework),
+      <br><br><h3>Declaration</h3>
+      <p>I hereby declare that the GameVerse project presented in this portfolio is a genuine work completed by me (and my team, if applicable). This project was undertaken as a part of [academic course / personal interest], with the goal of building an interactive and immersive gaming platform that connects players across different game genres and platforms.</p>
+      <p>Github: <a href="https://github.com/vivekumar18/GameVerse">GameVerse</a></p>
+      <img src="proj.png" alt="Portfolio Screenshot">
+      
+    </div>
+    <div class="project-card">
+      <h3>College websites</h3>
+      <p><p><b>Project Title: Campus connects</b></p>
+      <b>Technologies Used:</b>Html, Css, JavaScript and php.
+      <br><br><h3>Declaration</h3>
+      <p>A responsive and dynamic website designed for my college, featuring student login, course details, faculty pages, event updates, and admin control. Built using HTML, CSS, JavaScript, and PHP with MySQL database integration.</p>
+      <p>Wbsite Link: <a href="mscollege.netlify.app">click</a></p>
+      <img src="proj2.png" alt="Student Management Screenshot">
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: vivekkumar120103@gmail.com</p>
+    <p>Phone: +91-9576742410</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vivek-kumar-3579841a7/">linkedin.com/in/Vivek</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Vivek Kumar. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
